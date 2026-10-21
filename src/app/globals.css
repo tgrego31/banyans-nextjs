@@ -1,0 +1,75 @@
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url('/wod-banyans-background.png') no-repeat center center / cover fixed;
+}
+.top-menu {
+  background-color: #fafafa !important;
+  padding: 10px 0 15px;
+}
+.top-menu .nav-link {
+  color: #111;
+  font-size: 15px;
+  margin: 0 2px;
+}
+.top-menu .nav-link.active {
+  color: #111;
+  text-decoration: underline;
+}
+.language-button {
+  white-space: nowrap;
+}
+.hero {
+  min-height: 500px;
+  flex: 1;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+.hero h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.hero h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.bottom-menu {
+  background: #1c1c1c;
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.bottom-menu h3 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.subscribe-form input {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin: 5px 0;
+  padding: 2px 5px;
+  color: #111;
+}
+.subscribe-form button {
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  .hero { min-height: 420px; padding: 40px 0; }
+  .top-menu { padding: 6px 0; }
+}
